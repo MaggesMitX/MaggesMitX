@@ -1,26 +1,63 @@
 #Das Programm soll ein Auswahlmenü haben, um ein Password zu generieren und dieses Unter einem Namen auf einer sql Lite Datenbank zu speichern.
-
+#!/usr/bin/env python3
+# coding: utf-8
+from datetime import date
+from tkinter import *
 import secrets
 import sqlite3
 
 verbindung = sqlite3.connect("PWdaten.db")
 zeiger = verbindung.cursor()
+today = date.today()
+
+# dd/mm/YY
+act_day = today.strftime("%d/%m/%Y")
+#print("actual day =", act_day)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
 
 sql_anweisung = """
-CREATE TABLEIF NOT EXISTS Passwörter (
+CREATE TABLE IF NOT EXISTS Passwörter (
 Account VARCHAR(20), 
 Passwort VARCHAR(30), 
 Erstelldatum DATE
 );"""
-
 zeiger.execute(sql_anweisung)
 #akutelle Werte der DB committen(Übertragen)
 verbindung.commit()
 #verbindung zur DB schließen
 verbindung.close()
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+def show_entry_fields():
+   print("Account: %s\nPasswort: %s" % (Account.get(), Passwort.get()))
+
+def add_entry():
+    password = secrets.token_urlsafe(32)
+    print("The Password is", password)
+ 
+
+master = Tk()
+master.geometry("400x180")
+
+Label(master, text="Account").grid(row=0)
+Label(master, text="Passwort").grid(row=1)
+
+Account = Entry(master)
+Passwort = Entry(master)
+
+Account.grid(row=0, column=1)
+Passwort.grid(row=1, column=1)
+
+Button(master, text='Speichern', command= add_entry).grid(row=3, column=0, sticky=W, pady=4) #quit durch Speichern ersetzen
+Button(master, text='Beenden', command=master.quit).grid(row=3, column=1, sticky=W, pady=4) 
+Button(master, text='Anzeigen', command=show_entry_fields).grid(row=3, column=2, sticky=W, pady=4)
+
+mainloop( )
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
 
 #password generieren
 def create_password(pw):
     password = secrets.token_urlsafe(32)
     print("The Password is", password)
+    
+
