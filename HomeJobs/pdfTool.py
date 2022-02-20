@@ -2,7 +2,7 @@
 # coding: utf-8
 
 #Libarys zum installieren:
-# pikepdf und tqdm/(pip install ...)
+#pikepdf und tqdm/(pip install ...)
 
 import pikepdf
 from tqdm import tqdm
