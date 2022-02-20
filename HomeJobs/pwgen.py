@@ -2,6 +2,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 from datetime import date
+from optparse import Values
 from tkinter import *
 import secrets
 import sqlite3
@@ -34,10 +35,27 @@ def show_entry_fields():
 def add_entry():
     password = secrets.token_urlsafe(32)
     print("The Password is", password)
- 
+    Account = Account.get()
+    Passwort = Passwort.get()
+    zeiger.execute("SELECT COUNT(*) from Passwörter WHERE Account = ' "+ Account +"' ")
+    zeiger.execute("SELECT COUNT(*) from Passwörter WHERE Passwort = ' "+ password +"' ")
+    result = zeiger.fetchall
+
+#checking ob der nutzer schon existiert
+    if int(result[0]) > 0:
+        error["text"] = "Error: Account wurde bereits angelegt"
+    else:
+        error["text"] = "Account mit Passwort angelegt" 
+        zeiger.execute("INSERT INTO Passwörter(Account, Passwort)VALUES(?,?)", (Account, password))
+        verbindung.commit()  
 
 master = Tk()
 master.geometry("400x180")
+
+#Error Erzeugen
+error = Message(text="", width=160)
+error.place(x = 30, y = 10)
+error.config(padx=0)
 
 Label(master, text="Account").grid(row=0)
 Label(master, text="Passwort").grid(row=1)
@@ -54,10 +72,7 @@ Button(master, text='Anzeigen', command=show_entry_fields).grid(row=3, column=2,
 
 mainloop( )
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
-
 #password generieren
-def create_password(pw):
-    password = secrets.token_urlsafe(32)
-    print("The Password is", password)
-    
-
+#def create_password(pw):
+#    password = secrets.token_urlsafe(32)
+#    print("The Password is", password)
