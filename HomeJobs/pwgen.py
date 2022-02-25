@@ -23,7 +23,6 @@ act_day = today.strftime("%d/%m/%Y")
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
-
 sql_anweisung = """
 CREATE TABLE IF NOT EXISTS Passwörter (
 Account VARCHAR(20), 
