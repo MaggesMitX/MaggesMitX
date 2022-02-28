@@ -22,8 +22,12 @@ act_day = today.strftime("%d/%m/%Y")
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+<<<<<<< HEAD
 
 SQLITE_CREATE_TABLE = """
+=======
+sql_anweisung = """
+>>>>>>> 14f214720b4e07bc4c5c4256b9dd17d6610660ac
 CREATE TABLE IF NOT EXISTS Passwörter (
 Account VARCHAR(20), 
 Passwort VARCHAR(30), 
