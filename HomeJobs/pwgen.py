@@ -3,6 +3,7 @@
 # coding: utf-8
 from datetime import date
 from doctest import master
+from socket import create_connection
 from tkinter import *
 from sqlite3 import Error
 import time
@@ -17,28 +18,6 @@ win = Tk()
 # dd/mm/YY
 act_day = today.strftime("%d/%m/%Y")
 #print("actual day =", act_day)
-
-#Error Erzeugen
-error = Message(text="", width=160)
-error.place(x = 30, y = 10)
-error.config(padx=0)
-
-# #tkinter erstellen des Fensters
-win.geometry("400x180") #Anweisung größe des Bildes
-win.title("Welcomne to DataPass")
-
-Label(win, text="Account").grid(row=0)
-Label(win, text="Passwort").grid(row=1)
-
-Account = Entry(win)
-Passwort = Entry(win)
-
-Account.grid(row=0, column=1)
-Passwort.grid(row=1, column=1)
-
-
-Button(win, text='Beenden', command=Tk.quit).grid(row=3, column=1, sticky=W, pady=4)  
-
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
 
@@ -70,7 +49,7 @@ def insert_record():
     Account, Passwort, Erstelldatum)
     VALUES (?, ?, ?)""", (Account, Passwort, act_day))
 
-    Button(win, text='Speichern', command= insert_record).grid(row=3, column=0, sticky=W, pady=4) 
+    
 #Define SQL Values for inserting
 verbindung.commit()
 result = zeiger.fetchall
@@ -78,7 +57,7 @@ result = zeiger.fetchall
 #Zeige die aktuellen Einträge an!!!! Noch ab ändern  in SELECT statt der function 
 def show_entry_fields():
    print("Account: %s\nPasswort: %s" % (Account, Passwort))
-   Button(win, text='Anzeigen', command=show_entry_fields).grid(row=3, column=2, sticky=W, pady=4)
+   
 
 #password generieren
 def create_password(pw):
@@ -93,5 +72,25 @@ def create_password(pw):
     else:
         error["text"] = "Account mit Passwort angelegt" 
         zeiger.execute("INSERT INTO Passwörter(Account, Passwort)VALUES(?,?)", (Account, crpassword))
-        verbindung.commit()  
+        verbindung.commit()
+#Error Erzeugen
+error = Message(text="", width=160)
+error.place(x = 30, y = 10)
+error.config(padx=0)  
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+# #tkinter erstellen des Fensters
+win.geometry("400x180") #Anweisung größe des Bildes
+win.title("Welcomne to DataPass")
+
+Label(win, text="Account").grid(row=0)
+Label(win, text="Passwort").grid(row=1)
+
+Account = Entry(win)
+Passwort = Entry(win)
+
+Account.grid(row=0, column=1)
+Passwort.grid(row=1, column=1)
+
+Button(win, text='Speichern', command= insert_record).grid(row=3, column=0, sticky=W, pady=4) 
+Button(win, text='Beenden', command=Tk.quit).grid(row=3, column=1, sticky=W, pady=4)
+Button(win, text='Anzeigen', command=show_entry_fields).grid(row=3, column=2, sticky=W, pady=4)  
