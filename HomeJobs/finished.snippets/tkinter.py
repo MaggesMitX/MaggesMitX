@@ -2,10 +2,6 @@
 # coding: utf-8
 #Help:https://www.pythontutorial.net/tkinter/
 
-from tkinter import Tk, BOTH
-from tkinter.ttk import Frame
+import tkinter as tk
 
-
-win =Tk()
-
-win.mainloop()
+win = tk.Tk()
