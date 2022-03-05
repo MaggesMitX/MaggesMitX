@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import time, math
+from turtle import color
 from rpi_ws281x import PixelStrip, Color
 import argparse
 
@@ -27,22 +28,7 @@ if __name__ == '__main__':
         print('Use "-c" argument to clear LEDs on exit')
 
         
-    try:
-        while True:
-            #Entkommentieren um Programm auszuwählen
-            colorWipe(strip, color)
-            time.sleep(3)
-            #theaterChase(strip)
-            #theaterChaseRainbow(strip)
-            #pulsing_light(strip)
-            snow_sparkle(strip)
-            #strobe(strip)
-            #bouncing_balls()
-    except KeyboardInterrupt:
-        if args.clear:
-            colorWipe(strip, Color(0, 0, 0), 10)
-
-                    #Im Startup soll wie bei der @dge Unit eine colorwipe animation laufen, einmal blau dann weiß
+#Im Startup soll wie bei der @dge Unit eine colorwipe animation laufen, einmal blau dann weiß
 def colorWipe(strip, color, wait_ms=50):
     for i in range(strip.numPixels()):
         strip.setPixelColor(i, color)  #Funktion rpi_ws281x.color wandelt DEC in BIN  um
@@ -106,4 +92,19 @@ def bouncing_balls(strip,ball_count=4, wait_ms=200):
         strip.show()
         for i in range(strip.numPixels()):
             strip.setPixelColorRGB(i, 0,0,0)
-            
+
+
+try:
+        while True:
+            #Entkommentieren um Programm auszuwählen
+            colorWipe(strip, color)
+            time.sleep(3)
+            #theaterChase(strip)
+            #theaterChaseRainbow(strip)
+            #pulsing_light(strip)
+            snow_sparkle(strip)
+            #strobe(strip)
+            #bouncing_balls()
+except KeyboardInterrupt:
+        if args.clear:
+            colorWipe(strip, Color(0, 0, 0), 10)
