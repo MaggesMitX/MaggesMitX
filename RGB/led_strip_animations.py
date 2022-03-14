@@ -3,7 +3,7 @@ from rpi_ws281x import PixelStrip, Color
 import argparse
 
 # LED strip configuration:
-LED_COUNT = 70       # Number of LED pixels.
+LED_COUNT = 200       # Number of LED pixels.
 LED_PIN = 18          # GPIO pin connected to the pixels (18 uses PWM!).
 # LED_PIN = 10        # GPIO pin connected to the pixels (10 uses SPI /dev/spidev0.0).
 LED_FREQ_HZ = 800000  # LED signal frequency in hertz (usually 800khz)
@@ -98,7 +98,6 @@ def bouncing_balls(strip,ball_count=4, wait_ms=200):
             strip.setPixelColorRGB(i, 0,0,0)
             
 def snow_sparkle(strip,sparkle_delay=20):
-    print("starting snow sparkle animation")
     from random import randint
     pixel= randint(0,strip.numPixels())
     speed_delay=randint(100,1000)
@@ -184,15 +183,22 @@ if __name__ == '__main__':
             #colorWipe(strip, color)
             #theaterChase(strip)
             #theaterChaseRainbow(strip)
-            pulsing_light(strip)
+            #pulsing_light(strip)
             #snow_sparkle(strip)
             #strobe(strip)
-            #bouncing_balls()
-            
+            bouncing_balls(strip)
+            #colorWipe(strip, Color(255, 0, 0), 0)  # Red wipe
+            #time.sleep(2)
+            #colorWipe(strip, Color(0, 255, 0), 0)  # Blue wipe
+            #time.sleep(2)
+            #colorWipe(strip, Color(0, 0, 255), 0)  # Green wipe
+            #time.sleep(2)
             
 
     except KeyboardInterrupt:
 
         if args.clear:
-            colorWipe(strip, Color(0, 0, 0), 10)
+            colorWipe(strip, Color(255, 255, 255, 255), 0)  # Composite White + White LED wipe
+            time.sleep(0.5)
+            colorWipe(strip, Color(0, 0, 0, 0), 0)  # Composite White + White LED wipe
 
