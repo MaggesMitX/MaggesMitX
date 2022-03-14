@@ -12,17 +12,17 @@
  
 case "$1" in
     start)
-        echo "RGB Stripe wird gestartet"
+        echo "RGB Stripe Programm wird gestartet"
         # Starte Programm
-        /usr/local/bin/RGB_Printer.py
+        /home/ta/Dokumente/Python/led_animation.py
         ;;
     stop)
-        echo "RGB Stripe wird ausgeschaltet"
+        echo "RGB Stripe Programm wird beendet"
         # Beende Programm
-        killall RGB_Printer.py
+        killall led_animation.py
         ;;
     *)
-        echo "Benutzt: /etc/init.d/RGB_Printer.py {start|stop}"
+        echo "Benutzt: /home/ta/Dokumente/Python/led_animation.py {start|stop}"
         exit 1
         ;;
 esac

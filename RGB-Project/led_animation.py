@@ -1,3 +1,4 @@
+from re import S
 import time, math
 from rpi_ws281x import PixelStrip, Color
 import argparse
@@ -161,6 +162,10 @@ def rainbowCycle(strip, wait_ms=20, iterations=5):
                 (int(i * 256 / strip.numPixels()) + j) & 255))
         strip.show()
         time.sleep(wait_ms / 1000.0)
+
+def terminateSequence():
+    colorWipe(strip, Color(255, 255, 255, 255), 0)  # Composite White + White LED wipe
+    colorWipe(strip, Color(0, 0, 0, 0), 0)  # Composite White + White LED wipe
             
                    
 
@@ -184,9 +189,9 @@ if __name__ == '__main__':
             #theaterChase(strip)
             #theaterChaseRainbow(strip)
             #pulsing_light(strip)
-            #snow_sparkle(strip)
+            snow_sparkle(strip)
             #strobe(strip)
-            bouncing_balls(strip)
+            #bouncing_balls(strip)
             #colorWipe(strip, Color(255, 0, 0), 0)  # Red wipe
             #time.sleep(2)
             #colorWipe(strip, Color(0, 255, 0), 0)  # Blue wipe
@@ -194,11 +199,9 @@ if __name__ == '__main__':
             #colorWipe(strip, Color(0, 0, 255), 0)  # Green wipe
             #time.sleep(2)
             
-
     except KeyboardInterrupt:
-
         if args.clear:
-            colorWipe(strip, Color(255, 255, 255, 255), 0)  # Composite White + White LED wipe
-            time.sleep(0.5)
-            colorWipe(strip, Color(0, 0, 0, 0), 0)  # Composite White + White LED wipe
+            terminateSequence()
 
+    except SystemExit:
+        terminateSequence()
