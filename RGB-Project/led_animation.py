@@ -1,4 +1,3 @@
-from re import S
 import time, math
 from rpi_ws281x import PixelStrip, Color
 import argparse
