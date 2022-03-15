@@ -1,5 +1,5 @@
 [Unit]
-Description=led-Animation
+Description=rgbStatusJob
 Requires=network-online.target
 After=network-online.target
 
@@ -13,5 +13,3 @@ RestartSec=3
 
 [Install]
 WantedBy=multi-user.target
-
-Bitte noch WorkingDir und execstart ändern
