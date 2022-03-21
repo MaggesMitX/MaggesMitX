@@ -200,7 +200,7 @@ class exceptedErrors():                     #Klasse für Errors die Erwartet wer
             print("Es konnte keine Verbindung mit dem Netzwerk hergestellt werden."
              "Bitte beheben Sie den Fehler um eine Verbindung zum Drucker herzustellen")
             time.sleep(5)
-            return 
+            #return 
         
                    
 

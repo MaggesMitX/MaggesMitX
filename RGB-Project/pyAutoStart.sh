@@ -14,7 +14,7 @@ case "$1" in
     start)
         echo "RGB Stripe Programm wird gestartet"
         # Starte Programm
-        /home/ta/Dokumente/Python/led_animation.py
+        /home/pi/Dokumente/Python/led_animation.py
         ;;
     stop)
         echo "RGB Stripe Programm wird beendet"

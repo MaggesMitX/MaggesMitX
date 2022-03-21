@@ -4,5 +4,8 @@ sudo systemctl status/start/disable/enable/stop bootup.service
 unter /etc/systemd/system werden die services abgespeichert.
 Für die bootup.service braucht man keine .Sh Dateien.
 
+Auf dem Pi muss im Verzeichnis /home/pi/Dokumente ein ordner mit Python erstellt werden, damit der path übereinstimmt.
+Endpath sollte: /home/pi/Dokumente/Python/application.py , sein.
+
 
 
