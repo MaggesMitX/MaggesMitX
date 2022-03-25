@@ -19,5 +19,8 @@ while True:
     elif current_time != time(15,00 ):
             print("error")
             sleep(5)
+            goto :A
             break
     KeyboardInterrupt
+A
+print("test")

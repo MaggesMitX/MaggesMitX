@@ -1,4 +1,5 @@
 import time, math
+from timeit import repeat
 from rpi_ws281x import PixelStrip, Color
 import argparse
 
@@ -12,6 +13,21 @@ LED_BRIGHTNESS = 255  # Set to 0 for darkest and 255 for brightest
 LED_INVERT = False    # True to invert the signal (when using NPN transistor level shift)
 LED_CHANNEL = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
 
+
+    
+def orangeWipe():
+        colorWipe(strip, Color(255, 153, 51), 0)    # orange wipe
+def yellowWipe():
+        colorWipe(strip, Color(255, 255, 0), 0)     # yellow wipe
+def greenWipe():
+        colorWipe(strip, Color(0, 255, 0), 0)       # Green wipe
+def blueWipe():
+        colorWipe(strip, Color(0, 0, 255), 0)       # Blue wipe    
+def CyanWipe():
+        colorWipe(strip, Color(0, 255, 255), 0)     # Cyan wipe
+def PinkWipe():
+        colorWipe(strip, Color(255, 0, 255), 0)     # Pink Wipe    
+    
 
 def wheel(pos):
     """Generate rainbow colors across 0-255 positions."""
@@ -186,9 +202,10 @@ if __name__ == '__main__':
             #LED Strip Programme(
             #colorWipe(strip, color)
             #theaterChase(strip)
+            orangeWipe(strip)
             #theaterChaseRainbow(strip)
             #pulsing_light(strip)
-            snow_sparkle(strip)
+            #snow_sparkle(strip)
             #strobe(strip)
             #bouncing_balls(strip)
             #colorWipe(strip, Color(255, 0, 0), 0)  # Red wipe

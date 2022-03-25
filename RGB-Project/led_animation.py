@@ -1,10 +1,6 @@
-from this import s
 import time, math
-from turtle import st
 from rpi_ws281x import PixelStrip, Color
 import argparse
-from datetime import datetime, time
-from re import A
 
 # LED strip configuration:
 LED_COUNT = 200       # Number of LED pixels.
@@ -17,7 +13,7 @@ LED_INVERT = False    # True to invert the signal (when using NPN transistor lev
 LED_CHANNEL = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
 
 class GlobalMainFunction():                                                
-    global colorWipe, DatetimeTimeOut                                                    #Golbalisieren der ColorWipe Funktion
+    global colorWipe                                                    #Golbalisieren der ColorWipe Funktion
 
     def colorWipe(strip, color, wait_ms=50):                             #Hauptfunktion
      print("starting colorWipe animation")
@@ -27,22 +23,8 @@ class GlobalMainFunction():
         strip.show()
         time.sleep(wait_ms / 1000.0)    
 
-    def DatetimeTimeOut():    #Funtion where the programm should go into the termimate function when the datetime is reached
-            current_time = datetime.now().time().replace(second=0, microsecond=0)
 
-            if current_time == time(15,00 ):
-                print("EndeSequenz einleiten")  
-                time.sleep(1)
-                terminateSequence()
 
-            elif current_time != time(15,00 ):
-                print("")
-                time.sleep(5)
-                snow_sparkle(strip)         #Momentaner globaler Verweis auf die Laufzeitfunktion 
-
-            elif current_time == time(7,15 ):
-                print("Starte LED Stripes")
-                snow_sparkle(strip)
 
 
 class RGBFunctions():
@@ -190,8 +172,6 @@ class RGBFunctions():
             strip.show()
             time.sleep(wait_ms / 1000.0)
 
-    
-
 
 class exceptedErrors():                     #Klasse für Errors die Erwartet werden können 
     global terminateSequence, connectionErrorSequence
@@ -210,7 +190,7 @@ class exceptedErrors():                     #Klasse für Errors die Erwartet wer
             #return 
 
             
-
+            
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--clear', action='store_true', help='clear the display on exit')
