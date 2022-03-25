@@ -53,36 +53,36 @@ try:
 
         for i in range(4):
             #print(i)
-            orangeWipe()
+            orangeWipe()                            #Orange Wipe for Loop
             time.sleep(1)
         if i == 3:
             i == 0 
             for i in range(4):
                 #print(i)
-                blueWipe()
+                blueWipe()                          #Blue Wipe for Loop
                 time.sleep(1)
             if i == 3:
                 i == 0
                 for i in range(4):
-                    yellowWipe()
+                    yellowWipe()                    #Yellow Wipe for Loop
                     time.sleep(1)
                 if i == 3:
                     i == 0
                     for i in range(4):
                         #print(i)
-                        greenWipe()
+                        greenWipe()                 #Green Wipe for Loop
                         time.sleep(1)
                     if i == 3:
                         i == 0
                         for i in range(4):
                             #print(i)
-                            CyanWipe()
+                            CyanWipe()              #Cyan Wipe for Loop
                             time.sleep(1)
                         if i == 3:
                             i == 0
                             for i in range(4):
                                 #print(i)
-                                PinkWipe()
+                                PinkWipe()          #Pink Wipe for Loop
                                 time.sleep(1)    
 except KeyboardInterrupt:
     clean
