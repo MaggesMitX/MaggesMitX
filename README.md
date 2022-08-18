@@ -1,11 +1,11 @@
 # 👋 What´s Up.. Hi, I’m Max
 ![](https://komarev.com/ghpvc/?username=00Shinigami&color=red)
-- 👀 I’m interested in Python, Visual Basic and C++
-- 🌱 I’m currently study Computer Science in Germany and Working on lovely Projects
+- 🍂 I’m interested in Python, Visual Basic and C++
+- 🎀 I’m currently study Computer Science in Germany and Working on lovely Projects
 
 ### My Skills 
 
-- ✨  I´m also a great Discord Fan and work on A Community Discord Bot for RecRoom Player
+- 🍁  I´m also a great Discord Fan and work on A Community Discord Bot for RecRoom Player
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=00Shinigami&show_icons=true&theme=dracula)](https://github.com/00Shinigami/github-readme-stats)
 
@@ -20,7 +20,7 @@
 
 ### How to?
 
-- 📫 How to reach me. Bascially no.. but if ure interested just ask me on Discord Shinigami#1333
+- ♨️ How to reach me. Bascially no.. but if ure interested just ask me on Discord Shinigami#1333
 
 
 
