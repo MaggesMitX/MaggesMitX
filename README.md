@@ -28,8 +28,8 @@
 <a href="https://github.com/00Shinigami/MatrixModelling">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=00Shinigami&repo=MatrixModelling"/>
 </a>
-<a href="https://github.com/00Shinigami/DCL-Bot">
-  <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=00Shinigami&repo=DCL-Bot"/>
+<a href="https://github.com/tyleo-rec/CircuitsV2Resources">
+  <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=tyleo-rec&repo=CircuitsV2Resources"/>
 </a>
 <br>
 <br>
