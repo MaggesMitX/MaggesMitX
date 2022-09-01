@@ -2,7 +2,7 @@
 
 ![](https://komarev.com/ghpvc/?username=00Shinigami&color=red)
 
-- 🍂 I’m interested in Python, Visual Basic and C++
+- 🍂 I’m interested and working on Python, Visual Basic and C++
 - 🎀 I’m currently study Computer Science in Germany and Working on lovely Projects
 <br>
 
