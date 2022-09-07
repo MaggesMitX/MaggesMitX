@@ -3,12 +3,12 @@
 ![](https://komarev.com/ghpvc/?username=00Shinigami&color=red)
 
 - 🍂 I’m interested and working on Python, Visual Basic and C++
-- 🎀 I’m currently study Computer Science in Germany and Working on lovely Projects
+- 🎀 I’m currently study Computer Science in Cologne and Working on lovely Projects
 <br>
 
 ![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=tru8wact27wbvi7zbi9memtgo&count=3)
 
-### 🟥 My Skills 🟥 
+### 🟥 ME & Github 🟥 
 
 - 🍁  I´m also a great Discord Fan and work on A Community Discord Bot for RecRoom Player
 - 🍂  It wold a pleasure for me to help others of their Projects and future plans
@@ -19,17 +19,17 @@
 ### 🟥 Good to Knows 🟥
 <br>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=00Shinigami&layout=compact&theme=Dracula)](https://github.com/00Shinigami)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=00Shinigami&layout=compact&theme=dracula)](https://github.com/00Shinigami)
 <br>
 <br>
 
 ### 🟥 Recent Repos 🟥
 
 <a href="https://github.com/00Shinigami/MatrixModelling">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=00Shinigami&repo=MatrixModelling"/>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=00Shinigami&repo=MatrixModelling&theme=dracula"/>
 </a>
 <a href="https://github.com/tyleo-rec/CircuitsV2Resources">
-  <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=tyleo-rec&repo=CircuitsV2Resources"/>
+  <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=tyleo-rec&theme=dracula&repo=CircuitsV2Resources"/>
 </a>
 <br>
 <br>
