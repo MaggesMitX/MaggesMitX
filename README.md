@@ -2,16 +2,16 @@
 
 ![](https://komarev.com/ghpvc/?username=00Shinigami&color=red)
 
-- 🍂 I’m interested and working on Python, Visual Basic and C++
-- 🎀 I’m currently study Computer Science in Cologne and Working on lovely Projects
+- 🍂 I’m interested at working on Python, JavaScript and Linux shell scripts
+- 🎀 I’m currently study Computer Science in Cologne
 <br>
 
 ![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=tru8wact27wbvi7zbi9memtgo&count=3)
 
 ### 🟥 ME & Github 🟥 
 
-- 🍁  I´m also a great Discord Fan and work on A Community Discord Bot for RecRoom Player
-- 🍂  It wold a pleasure for me to help others of their Projects and future plans
+- 🍁  I´m great Discord Fan and work on A Community Discord Bot
+- 🍂  It would a pleasure for me to help others of their Projects and future plans
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=00Shinigami&show_icons=true&theme=dracula)](https://github.com/00Shinigami/github-readme-stats)
 <br>
