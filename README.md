@@ -2,7 +2,7 @@
 
 ![](https://komarev.com/ghpvc/?username=00Shinigami&color=red)
 
-- 🍂 I’m interested at working on Python, JavaScript and Linux shell scripts
+- 🍂 I’m interested at working on Python, C, Java and Linux shell scripts
 - 🎀 I’m currently study Computer Science in Cologne
 <br>
 
