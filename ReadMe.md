@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hello there :wave: <br>This is the place where I opensource stuff and break things 🤣<br><br>🔭  I’m currently study Computer Science in Cologne 😉<br>🌱  I’m currently learning C, Java<br>💬  Ask me about anything related to Python/Linux/Shell/Raspberrypi<br>👨‍💻  Read more about me on social media <br>⚡  Fun fact: You´ll never know everything
+Hello there :wave: <br>This is the place where I opensource stuff and break things 🤣<br><br>🔭  I’m currently studying Computer Science in Cologne 😉<br>🌱  I’m currently learning C, Java<br>💬  Ask me about anything related to Python/Linux/Shell/Raspberrypi<br>👨‍💻  Read more about me on social media <br>⚡  Fun fact: You´ll never know everything
 
 ![](https://komarev.com/ghpvc/?username=00Shinigami&color=blue)
 
