@@ -13,7 +13,7 @@ Hello there :wave: <br>This is the place where I opensource stuff and break thin
 
 ![](https://github-readme-streak-stats.herokuapp.com/?user=00Shinigami&theme=react&hide_border=false)<br/>
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=00Shinigami&theme=react&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=00Shinigami&theme=react&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=00Shinigami&theme=discord&no-frame=false&no-bg=false&margin-w=4)
