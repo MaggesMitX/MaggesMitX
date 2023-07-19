@@ -2,17 +2,7 @@
 Hello there :wave: <br><br>🔭  I’m currently studying Computer Science in Cologne 😉<br>🌱  I’m currently learning C, Java and Kotlin<br>👨‍💻  Read more about me on social media 
 
 ![](https://komarev.com/ghpvc/?username=MaggesMitX&color=blue)
----
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=MaggesMitX&theme=discord&no-frame=false&no-bg=false&margin-w=4)
 
-### ✍️ Random Dev Quote
-
-<a>
-  <img align="center" src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
-</a>
-
----
 # 📊 GitHub Stats:
 <a href="https://github.com/anuraghazra/github-readme-stats">
   <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MaggesMitX&theme=react&hide_border=false&include_all_commits=true&count_private=true&layout=compact" />
@@ -20,5 +10,6 @@ Hello there :wave: <br><br>🔭  I’m currently studying Computer Science in Co
 <a href="https://github.com/anuraghazra/convoychat">
   <img align="right" src="https://github-readme-streak-stats.herokuapp.com/?user=MaggesMitX&theme=react&hide_border=false" />
 </a>
+<br/>
 <br/>
 
