@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo  "--------------------------------------------------------"
 echo  "------------------------ATTENTION-----------------------" 
 echo  "--------- Update Ubuntu Server automaticaly ------------"
@@ -21,9 +19,10 @@ then
       echo "Update Abgeschlossen, System wird neugestartet."
       echo "-----------------------------------------------------------------------------------------"
       echo sudo reboot
-      fi
     else
-      echo "Fehler!, Es konnte keine Verbindung mit dem Internet hergestellt werden.Bitte Prüfe deine Internetverbindung"
+      echo "Fehler!, Es konnte keine Verbindung mit dem Internet hergestellt werden. Bitte prüfe deine Internetverbindung"
       exit
+    fi
 else
-echo "If you are brave - Please run as root"
+    echo "If you are brave - Please run as root"
+fi
